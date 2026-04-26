@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10-Sapphire Journey</title>
+    
+           <link rel="stylesheet" href="https://pyscript.net/releases/2026.3.1/core.css">
+ <script type="module" src="https://pyscript.net/releases/2026.3.1/core.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            background-color: #1a73e8;
+            color: white;
+            padding: 12px 0;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand {
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 0.9rem;
+        }
+
+        .content {
+            flex: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 20px;
+            width: 100%;
+        }
+
+        .main-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .gallery-card {
+            background: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-container {
+            width: 100%;
+            aspect-ratio: 16 / 10;
+            background-color: #e0e0e0;
+        }
+
+        .card-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card-details {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            color: #111;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .card-subtitle {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .footer {
+            background-color: #1a73e8;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 1024px) {
+            .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 600px) {
+            .gallery-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="brand">10-Sapphire</div>
+            <nav>
+                <a href="#">Classmates</a>
+                <a href="#">Attendance Tracker</a>
+                <a href="#">Gallery</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content">
+        <h1 class="main-title">Highlights of Our 10-Sapphire Journey</h1>
+        <div id="gallery-container" class="gallery-grid"></div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025-2026 10-Sapphire. All rights reserved.</p>
+    </footer>
+
+    <script type="py" src="main.py"></script>
+
+</body>
+</html>
