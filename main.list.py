@@ -1,11 +1,9 @@
 from pyscript import display, document
 
 classmates = [
-    {"name": "Adrianna", "section": "Sapphire", "subject": "Math"},
-    {"name": "Sca", "section": "Sapphire", "subject": "English"},
-    {"name": "Jaiyanah", "section": "Ruby", "subject": "Math"},
+    {"name": "Yao", "section": "Sapphire", "subject": "English"},
     {"name": "Michaela", "section": "Sapphire", "subject": "SS"},
-    {"name": "Harvey", "section": "Sapphire", "subject": "Science"},
+    {"name": "Harvey", "section": "Sapphire", "subject": "English"},
 ]
 
 def add_classmate(event):
