@@ -3,7 +3,7 @@ from pyscript import display, document
 classmates = [
     {"name": "Yao", "section": "Sapphire", "subject": "English"},
     {"name": "Michaela", "section": "Sapphire", "subject": "SS"},
-    {"name": "Harvey", "section": "Sapphire", "subject": "English"},
+    {"name": "Harvey", "section": "Sapphire", "subject": "Science"},
 ]
 
 def add_classmate(event):
