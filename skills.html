@@ -3,149 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Attendance Tracker</title>
-        <link rel="stylesheet" href="https://pyscript.net/releases/2026.3.1/core.css">
- <script type="module" src="https://pyscript.net/releases/2026.3.1/core.js"></script>
+    <!-- PY-SCRIPT LINK -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.3.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2026.3.1/core.js"></script>
+
+    <!-- BS LINK -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     
     <py-config>
         packages = ["numpy", "matplotlib"]
     </py-config>
-    <style>
-        body { 
-            background: url('https://i.pinimg.com/originals/0c/e5/ef/0ce5ef27f70a4e5d9079aac5ba7bae15.gif') no-repeat center center fixed; 
-            background-size: cover; 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            display: flex; 
-            flex-direction: row;
-            justify-content: center; 
-            align-items: center; 
-            min-height: 100vh; 
-            margin: 0;
-            gap: 40px; 
-        }
+    
+    <!-- FONT 1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
 
-        .navbar {
-    background: rgba(255, 182, 193, 0.9); /* Soft Pink */
-    backdrop-filter: blur(10px);
-    border-bottom: 3px solid #ff80ab;
-    padding: 15px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.nav-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.brand {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #b33951;
-    text-shadow: 1px 1px white;
-}
-
-nav a {
-    color: #d81b60;
-    text-decoration: none;
-    margin-left: 20px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-nav a:hover { 
-    color: white; 
-}
-
-        .container { 
-            background: rgba(255, 255, 255, 0.85); 
-            backdrop-filter: blur(5px);
-            padding: 25px; 
-            border-radius: 30px; 
-            border: 3px solid #ffb6c1; 
-            width: 320px; 
-            text-align: center; 
-        }
-
-        h2 { color: #b33951; font-weight: bold; font-size: 1.8rem; margin-bottom: 10px; }
-        
-        label { display: block; text-align: left; color: #6d4c41; font-weight: 600; margin-top: 15px; margin-left: 5px;}
-
-        select, input { 
-            width: 100%; 
-            padding: 12px; 
-            margin-top: 8px; 
-            border-radius: 15px; 
-            border: 2px solid #f8bbd0; 
-            outline: none;
-            transition: 0.3s;
-        }
-
-        select:focus, input:focus { border-color: #d81b60; }
-
-        button { 
-            width: 100%; 
-            background: linear-gradient(45deg, #ff80ab, #d81b60); 
-            color: white; 
-            border: none; 
-            padding: 14px; 
-            margin-top: 25px; 
-            border-radius: 20px; 
-            cursor: pointer; 
-            font-weight: bold;
-            box-shadow: 0 4px 15px rgba(216, 27, 96, 0.3);
-            transition: transform 0.2s;
-        }
-
-        button:hover { transform: scale(1.03); }
-
-        #graph-output { 
-            background: white; 
-            padding: 15px; 
-            border-radius: 25px; 
-            border: 5px solid #ffb6c1;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-    </style>
+    <!-- FONT 2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+   
+    <title>10-Sapphire Journey</title>
 </head>
 <body>
-
+<nav class="navbar navbar-expand-lg">
+<div class="container-fluid">
+    <h5 class="navbar-brand" href="#">10 Sapphire <img src="https://pixelsafari.neocities.org/favicon/nature/star/star83.gif"></h5>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            <a class="nav-link" href="index.html">⌞Gallery⌝</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="list.html">Classmates ⭑.ᐟ</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="skills.html">‧₊˚ Attendance Tracker┊</a>
+            </li>
+        </ul>
+    </div>
+    </div>
+</nav>
+</head>
+<body>
     <div class="container">
-        <h2>Tracker</h2> 
-
-    <header class="navbar">
-        <div class="nav-container">
-            <div class="brand">10-Sapphire</div>
-            <nav>
-                <a href="list.html">Home</a>
-                <a href="skills.html">Attendance Tracker</a>
-                <a href="index.html">Gallery</a>
-            </nav>
-        </div>
-    </header>
-
+        <h2>Tracker <img src=https://pixelsafari.neocities.org/favicon/object/stationery/e8b3f1aa.gif></h2> 
         
-        <label>Pick a Day</label>
-        <select id="day-select">
-            <option value="Monday">Mon</option>
-            <option value="Tuesday">Tue</option>
-            <option value="Wednesday">Wed</option>
-            <option value="Thursday">Thu</option>
-            <option value="Friday">Fri</option>
+        <label>Select a Day</label>
+        <select id="day-select" class="mySelect">
+            <option value="Monday">Monday ♡</option>
+            <option value="Tuesday">Tuesday ♡</option>
+            <option value="Wednesday">Wednesday ♡</option>
+            <option value="Thursday">Thursday ♡</option>
+            <option value="Friday">Friday ♡</option>
         </select>
-
-        <label>How many absences?</label> 
+        <br>
+        <label>Number of absences?</label> 
         <input type="number" id="absence-input" min="0" placeholder="0">
-
-        <button id="submit-btn" py-click="update_data">Update Chart</button>
+        <br>
+        <button id="submit-btn" class="button" py-click="update_data">Update Chart <img src="https://pixelsafari.neocities.org/favicon/horror/medical/tablet6.gif"></button>
     </div>
 
+    <div class="container">
     <div id="graph-output"></div>
+    </div>
 
     <script type="py" src="main.skills.py"></script>
 </body>
