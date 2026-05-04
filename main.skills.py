@@ -7,8 +7,7 @@ absence_counts = np.array([0, 0, 0, 0, 0])
 
 def generate_graph():
     plt.clf() 
-    fig, ax = plt.subplots(figsize=(7, 5))
-    
+    fig, ax = plt.subplots(figsize=(5, 5))
     ax.plot(days, absence_counts, marker='o', color='black')
     
     ax.set_title("Weekly Attendance")
