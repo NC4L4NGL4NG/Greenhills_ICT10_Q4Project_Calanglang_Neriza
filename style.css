@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     background-image: url(https://i1-c.pinimg.com/1200x/39/57/51/3957516ae4fe665125e270057bd3b835.jpg);
+    background-size: cover;
     margin: 0;
     display: flex;
     flex-direction: column;
