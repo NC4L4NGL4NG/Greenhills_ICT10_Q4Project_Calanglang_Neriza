@@ -4,6 +4,8 @@ classmates = [
     {"name": "Yao", "section": "Sapphire", "subject": "English"},
     {"name": "Michaela", "section": "Sapphire", "subject": "SS"},
     {"name": "Harvey", "section": "Sapphire", "subject": "Science"},
+    {"name": "Neriza", "section": "Sapphire", "subject": "Math"},
+
 ]
 
 def add_classmate(event):
